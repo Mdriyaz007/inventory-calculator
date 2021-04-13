@@ -1,0 +1,65 @@
+<div class="container">
+    <img src="assets/images/printing_invoices.svg">
+
+       <mat-card class="container" style="width:270px">
+       <form [formGroup]="productForm">
+           <mat-card-title align='middle' style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+               Product Inventory
+           </mat-card-title>
+           <mat-card-content>
+        <mat-form-field appearance="outline">
+        <mat-label color="warn">Product Name</mat-label>
+        <input matInput type="text" placeholder="ex.Lifeboy soap" formControlName="pname">
+        <mat-icon matSuffix>list</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Quantity</mat-label>
+        <input matInput type="number" placeholder="ex.1" formControlName="qty">
+        <mat-icon matSuffix>shopping_cart</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Price</mat-label>
+        <input matInput type="number" placeholder="ex.100" formControlName="price">
+        <mat-icon matSuffix>poll</mat-icon>
+    </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions align='middle'>
+    <button mat-mini-fab color="accent" (click)="add()">ADD</button>&nbsp;&nbsp;
+    <button mat-mini-fab color="accent" (click)="reset()"><mat-icon>update</mat-icon></button>
+    </mat-card-actions>
+    </form>
+    </mat-card>
+
+    <div class="table1">
+      <table class="table table-striped table-dark" id="show">
+          <thead>
+              <tr>
+                  <th>Product Name</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Total</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor = "let item of listData">
+                  <td>{{ item.pname }}</td>
+                  <td>{{ item.qty }}</td>
+                  <td>{{ item.price }}</td>
+                  <td>{{ item.qty * item.price }}</td>
+                  <td><button mat-icon-button color="warn" (click)="rmv(item)">remove
+                </button></td>
+                  
+              </tr>
+              
+          </tbody>
+
+      </table> 
+
+      
+    <button mat-fab color="accent" style="margin-left: 45%;" (click)="prin()"><mat-icon>arrow_right</mat-icon>
+    </button>  
+    </div>
+   
+</div>

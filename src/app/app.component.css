@@ -1,0 +1,51 @@
+.container{
+    height:auto;
+    width:100%;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+img{
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+}
+ .navbar{
+    border-radius:0px 0px 5px 5px;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(10deg,#036eb7,#64eaff);
+    
+ 
+}
+ .navbar button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar button:hover{
+    transform: translate(0,0.25rem);
+    box-shadow: 2px 2px 3px 3px black;
+    transition: 0.5s;
+    
+}
+.conta{
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(110deg,#036eb7,#64eaff);
+    color: white;
+    border-radius: 5px;
+}
+.conta .contacts{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+a:hover{
+    transform: translate(0,-0.25rem);
+    
+    transition: 0.5s;
+}

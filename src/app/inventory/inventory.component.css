@@ -1,0 +1,48 @@
+.container{
+    margin-top: 5px;
+    background-image: white;/* linear-gradient(05deg,#036eb7,#64eaff); */
+    height:auto;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px 5px gray;
+    margin-bottom: 5px;
+
+    
+}
+.container img{
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+}
+.inputs{
+    margin-left: 10%;
+    width: 100%;
+}
+mat-form-field{
+    padding: 3%;
+}
+#con1{
+    height: auto;
+    width: 100%;
+    bottom: 10px;
+}
+.table1{
+    margin-top: 20px;
+}
+
+#show{
+   margin-left: 10%; 
+    width: 80%;
+    border-radius: 10px;
+}
+td{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+button:hover{
+    transform:translate(0,-0.25rem);
+    box-shadow: 2px 12px 2px grey;
+    transition: 0.5s;
+}

@@ -1,0 +1,44 @@
+.container{
+    margin-top: 5px;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px 5px gray;
+    background-color: white;
+    margin-bottom: 5px;
+}
+.container img{
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+}
+.inputs{
+    margin-left: 10%;
+    width: 100%;
+}
+mat-form-field{
+    padding: 3%;
+}
+.table1{
+    margin-top: 15px;
+    
+}
+
+#show{
+   margin-left: 10%; 
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+td{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+mat-card{
+    /* margin-left: 20%; */
+    margin-top: 10px;
+    width:300px;
+    border-radius: 10px;
+}
